@@ -1,0 +1,105 @@
+/* สไตล์ของ Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* ทำให้ Navbar ลอยอยู่ด้านบน */
+    top: 20;
+    left: 0;
+    width: 100%; /* ความกว้างเต็มหน้าจอ */
+    max-width: 1400px; /* ความยาวสูงสุด */
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* สีพื้นหลังโปร่งแสง */
+    color: white;
+    font-family: 'Prompt', sans-serif; /* ใช้ฟอนต์ Prompt */
+    border-radius: 0; /* ไม่มีขอบมน */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* เพิ่มขอบหม่น */
+    z-index: 10; /* ให้อยู่เหนือ Background Video */
+    backdrop-filter: blur(10px); /* เพิ่มเอฟเฟกต์เบลอ */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+    right: 0; /* จัดให้สมดุลสำหรับความกว้างเต็ม */
+}
+
+
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .navbar-logo img {
+    height: 50px; /* ปรับขนาดโลโก้ */
+    margin-right: 10px;
+    width: auto;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  .navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300; /* ความหนาของฟอนต์ */
+  }
+  
+  .navbar-menu li:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #1a1a40;
+    padding: 10px;
+    list-style: none;
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown li {
+    margin: 5px 0;
+  }
+  
+  .dropdown li a {
+    color: white;
+  }
+  
+  .navbar-buttons button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    height: 40px;
+  }
+  
+  .navbar-buttons .signup:hover {
+    background-color: white;
+    color: #0a0a23;
+    height: 40px;
+  }
+  
+  .navbar-buttons .dashboard {
+    background-color: #e64e20;
+    border: none;
+    height: 40px;
+  }
+  
+  .navbar-buttons .dashboard:hover {
+    background-color: #eb6025;
+  }
+  
