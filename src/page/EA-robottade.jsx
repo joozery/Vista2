@@ -1,7 +1,7 @@
 import React from "react";
 import "./EArobottade.css"; // ใช้สำหรับสไตล์
 import phoneImage from "../assets/phone-image.png"; // ใส่ภาพโทรศัพท์
-import appStoreLogo from "../assets/apple.svg"; // ใส่โลโก้ App Store
+import appStoreLogo from "/src/assets/apple.svg";
 import playStoreLogo from "../assets/google.svg"; // ใส่โลโก้ Google Play
 import FAQ from "../components/FAQ/FAQ"; // นำเข้า Component FAQ
 
