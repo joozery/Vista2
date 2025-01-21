@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar"; // ดึง Navbar
-import SectionVideo from "../components/Sectionvideo/SectionVideo";
+import SectionVideo from "../components/Sectionvideo/sectionVideo";
 import WhyFundingPips from "../components/Sectionvideo/WhyFundingPips"; // ดึง WhyFundingPips
 
 const Home = () => {
