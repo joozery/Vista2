@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar"; // ดึง Navbar
 import SectionVideo from '../components/Sectionvideo/SectionVideo';
-import WhyFundingPips from "../components/SectionVideo/WhyFundingPips"; // ดึง WhyFundingPips
+import WhyFundingPips from "../components/Sectionvideo/WhyFundingPips"; // ดึง WhyFundingPips
 
 const Home = () => {
   return (
