@@ -1,6 +1,6 @@
 [build]
-command = "npm install && npm run build"
-publish = "dist" # โฟลเดอร์ผลลัพธ์ของการ Build
+  command = "npm install && npm run build"
+  publish = "dist"
 
-[build.environment]
-NODE_VERSION = "18" # ใช้ Node.js เวอร์ชันที่เหมาะสม
+[context.production.environment]
+  NODE_VERSION = "20"
