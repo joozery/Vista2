@@ -6,6 +6,7 @@
     max-width: 1200px; /* กำหนดความกว้างสูงสุดของ Footer */
     margin: 0 auto; /* จัดให้อยู่กึ่งกลางหน้าจอ */
     padding: 20px 0; /* ระยะห่างด้านบนและล่าง */
+
   }
   
   .footer-content {
@@ -15,6 +16,7 @@
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Prompt', sans-serif;
+    ba
   }
   
   /* คอลัมน์ */

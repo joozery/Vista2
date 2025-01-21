@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import videoFile from "../../assets/Video.mp4"; // ใช้ ../../ แทนเพื่อขึ้นไปหาโฟลเดอร์ assets
 
 const SectionVideo = () => {
+  const videoRef = useRef(null); // ใช้ useRef เพื่ออ้างอิงถึง <video>
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5; // ปรับความเร็วเล่นวิดีโอ (0.5 = slow motion)
+    }
+  }, []);
+
   return (
     <section
       style={{
@@ -13,6 +21,7 @@ const SectionVideo = () => {
     >
       {/* วิดีโอพื้นหลัง */}
       <video
+        ref={videoRef} // เพิ่ม ref เพื่ออ้างอิงวิดีโอ
         autoPlay
         loop
         muted
@@ -94,7 +103,6 @@ const SectionVideo = () => {
             Join Competition
           </button>
         </div>
-        
       </div>
     </section>
   );
